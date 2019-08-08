@@ -1,12 +1,19 @@
 import React from 'react';
 import './App.css';
-import { Button } from 'antd';
+import { Layout } from 'antd';
+import Navigation from './components/navigation';
 
 const App = (props) => {
+  const { Header } = Layout;
+
   return (
     <div>
-      Hello World
-      <Button>Yo Angelo</Button>
+      <Layout>
+        <Header>
+          <Navigation />
+        </Header>
+      </Layout>
+
     </div>
   )
 };
