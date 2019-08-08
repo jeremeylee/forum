@@ -1,5 +1,5 @@
 import React from 'react';
-import './navigation.css'
+import './navigation.css';
 import { Row, Col, Menu, Icon } from 'antd';
 
 const Navigation = (props) => {
