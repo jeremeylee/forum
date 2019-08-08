@@ -1,6 +1,6 @@
 import React from 'react';
 import './homeForumHeader.css';
-import { Row, List, Card, Typography } from 'antd';
+import { Row, Typography } from 'antd';
 import HomeForumPosts from './homeForumPosts';
 
 const HomeForumHeader = (props) => {
@@ -42,9 +42,9 @@ const HomeForumHeader = (props) => {
     ))
   )
   return (
-    <diV>
+    <div>
       {displayForums()}
-    </diV>
+    </div>
   )
 }
 

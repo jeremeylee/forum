@@ -14,7 +14,7 @@ const Navigation = (props) => {
         </span>    
       </Col>
       <Col span={6}>
-        <Menu defaultSelectedKeys="Home" mode="horizontal" theme="dark" className="menu">
+        <Menu defaultSelectedKeys={['Home']} mode="horizontal" theme="dark" className="menu">
           <Menu.Item 
             key="Home">
             <Icon type="home" />Home
