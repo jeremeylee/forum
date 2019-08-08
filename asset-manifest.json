@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.ad59da52.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.fdf09b7e.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.fdf09b7e.chunk.js.map",
-    "runtime~main.js": "/react-gh-pages/static/js/runtime~main.ac2d5040.js",
-    "runtime~main.js.map": "/react-gh-pages/static/js/runtime~main.ac2d5040.js.map",
-    "static/css/2.1d6907fe.chunk.css": "/react-gh-pages/static/css/2.1d6907fe.chunk.css",
-    "static/js/2.58afae42.chunk.js": "/react-gh-pages/static/js/2.58afae42.chunk.js",
-    "static/js/2.58afae42.chunk.js.map": "/react-gh-pages/static/js/2.58afae42.chunk.js.map",
-    "index.html": "/react-gh-pages/index.html",
-    "precache-manifest.0be2356c769511086a00664eec071a1d.js": "/react-gh-pages/precache-manifest.0be2356c769511086a00664eec071a1d.js",
-    "service-worker.js": "/react-gh-pages/service-worker.js",
-    "static/css/2.1d6907fe.chunk.css.map": "/react-gh-pages/static/css/2.1d6907fe.chunk.css.map",
-    "static/css/main.ad59da52.chunk.css.map": "/react-gh-pages/static/css/main.ad59da52.chunk.css.map"
+    "main.css": "/forum/static/css/main.ad59da52.chunk.css",
+    "main.js": "/forum/static/js/main.af99b119.chunk.js",
+    "main.js.map": "/forum/static/js/main.af99b119.chunk.js.map",
+    "runtime~main.js": "/forum/static/js/runtime~main.9d917a32.js",
+    "runtime~main.js.map": "/forum/static/js/runtime~main.9d917a32.js.map",
+    "static/css/2.1d6907fe.chunk.css": "/forum/static/css/2.1d6907fe.chunk.css",
+    "static/js/2.bf740012.chunk.js": "/forum/static/js/2.bf740012.chunk.js",
+    "static/js/2.bf740012.chunk.js.map": "/forum/static/js/2.bf740012.chunk.js.map",
+    "index.html": "/forum/index.html",
+    "precache-manifest.d4a66693831e07382a4e13f788c260a3.js": "/forum/precache-manifest.d4a66693831e07382a4e13f788c260a3.js",
+    "service-worker.js": "/forum/service-worker.js",
+    "static/css/2.1d6907fe.chunk.css.map": "/forum/static/css/2.1d6907fe.chunk.css.map",
+    "static/css/main.ad59da52.chunk.css.map": "/forum/static/css/main.ad59da52.chunk.css.map"
   }
 }
