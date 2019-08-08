@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import { Layout } from 'antd';
+import { Layout, Affix } from 'antd';
 import Navigation from './components/navigation';
+import HomeForumHeader from './components/homeForumHeader';
 
 const App = (props) => {
   const { Header, Content, Footer } = Layout;
@@ -9,11 +10,13 @@ const App = (props) => {
   return (
     <div>
       <Layout>
-        <Header>
-          <Navigation />
-        </Header>
-        <Content>
-          Content
+        <Affix>
+          <Header>
+            <Navigation />
+          </Header>
+        </Affix>
+        <Content style={{ marginTop: '64px'}}>
+          <HomeForumHeader/>
         </Content>
         <Footer style= {{ textAlign: 'center' }}>
         Forum ©2019 Created by Jeremey & Kyle
