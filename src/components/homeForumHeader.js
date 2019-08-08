@@ -1,6 +1,8 @@
 import React from 'react';
 import './homeForumHeader.css';
 import { Row, List, Card, Typography } from 'antd';
+import HomeForumPosts from './homeForumPosts';
+
 const HomeForumHeader = (props) => {
   const { Title } = Typography;
   const data = [
@@ -22,13 +24,21 @@ const HomeForumHeader = (props) => {
   ];
   const displayForums = () => (
     data.map(item => (
-      <Row type="flex" justify="center">
-        <div className="header-container">
-          <Title level={3} style={{ color: 'white' }}>
-            {item.title}
-          </Title>
-        </div>
-      </Row>
+      <div>
+        <Row type="flex" justify="center">
+          <div className="header-container">
+            <Title level={3} style={{ color: 'white' }}>
+              {item.title}
+            </Title>
+          </div>
+        </Row>
+        <Row type="flex" justify="center">
+          <div className="post-container">
+            <HomeForumPosts/>
+          </div>
+          
+        </Row>
+      </div>
     ))
   )
   return (
