@@ -1,8 +1,6 @@
 import React from 'react';
 import './forum.css';
-import {
- Row, Col, List, Avatar 
-} from 'antd';
+import { Row, Col, List, Avatar } from 'antd';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Forum = (props) => {
@@ -55,7 +53,7 @@ const Forum = (props) => {
 
                     <Route path={item.url} exact component='' />
                   </Router>
-)}
+                )}
                 description={item.description}
               />
             </List.Item>

@@ -3,7 +3,6 @@ import './App.css';
 import moment from 'moment';
 import { Layout, Row, Affix } from 'antd';
 import Navigation from './components/navigation';
-import HomeForumHeader from './components/homeForumHeader';
 import Forum from './components/forum';
 
 const App = (props) => {
