@@ -10,7 +10,6 @@ const Home = (props) => {
   return (
     <div>
       <Content style={{ marginTop: '64px'}}>
-        {/* <HomeForumHeader/> */}
         <Forum
           posts='10'
           postDate={moment().format('MM/DD/YYYY, h:mm a')}
