@@ -37,7 +37,6 @@ const HomeForumHeader = (props) => {
             <div className="post-container">
               <HomeForumPosts/>
             </div>
-          
         </Row>
       </div>
     ))
