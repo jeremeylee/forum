@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import moment from 'moment';
 import { Layout, Affix } from 'antd';
 import Navigation from './components/navigation';
 import HomeForumHeader from './components/homeForumHeader';
@@ -20,7 +21,7 @@ const App = (props) => {
           {/* <HomeForumHeader/> */}
           <Forum
             posts='10'
-            postDate={new Date()}
+            postDate={moment().format('MM/DD/YYYY, h:mm a')}
           />
         </Content>
         <Footer style= {{ textAlign: 'center' }}>
