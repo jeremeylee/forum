@@ -16,11 +16,6 @@ const Home = (props) => {
           postDate={moment().format('MM/DD/YYYY, h:mm a')}
         />
       </Content>
-      <Row type="flex" justify="center">
-        <Footer style= {{position: 'absolute', bottom:'0'}}>
-          Forum ©2019 Created by Jeremey & Kyle
-        </Footer>
-      </Row>
     </div>
   );
 };

@@ -20,6 +20,11 @@ const App = (props) => {
           </Affix>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
+          <Row type="flex" justify="center">
+            <Footer style= {{position: 'absolute', bottom:'0'}}>
+              Forum ©2019 Created by Jeremey & Kyle
+            </Footer>
+          </Row>
         </Layout>
       </Router>
     </div>
