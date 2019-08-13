@@ -48,11 +48,7 @@ const Forum = (props) => {
                   <Avatar src="https://i.ytimg.com/vi/LrQHgABDdlI/hqdefault.jpg" />
                   }
                 title={(
-                  <Router>
-                    <Link to={item.url}>{item.title}</Link>
-
-                    <Route path={item.url} exact component='' />
-                  </Router>
+                  <Link to={item.url}>{item.title}</Link>
                 )}
                 description={item.description}
               />
