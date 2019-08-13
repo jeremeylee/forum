@@ -7,22 +7,27 @@ const Forum = (props) => {
     {
       title: 'General Discussion',
       description: 'General topics related to the discussion',
+      url: '/general-discussion',
     },
     {
       title: 'Memes',
       description: 'Funny memes for the wholesome folks',
+      url: '/memes',
     },
     {
       title: 'Crying Cat Pictures',
       description: 'Big moods in here',
+      url:'/crying-cat',
     },
     {
       title: 'Morbid Reality',
       description: 'It really be like that',
+      url: '/morbid-reality',
     },
     {
       title: 'Off Topic',
       description: '오늘은 여기까지',
+      url: '/off-topic',
     },
   ];
 

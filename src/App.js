@@ -25,7 +25,7 @@ const App = (props) => {
           />
         </Content>
         <Footer style= {{ textAlign: 'center' }}>
-        Forum ©2019 Created by Jeremey & Kyle
+          Forum ©2019 Created by Jeremey & Kyle
         </Footer>
       </Layout>
     </div>
