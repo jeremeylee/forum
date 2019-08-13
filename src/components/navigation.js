@@ -13,13 +13,13 @@ const Navigation = (props) => {
           </h1>
         </span>    
       </Col>
-      <Col xs={2} sm={2} md={4} lg={6} xl={6}>
+      <Col xs={2} sm={2} md={4} lg={5} xl={5}>
         <Menu defaultSelectedKeys={['Home']} mode="horizontal" theme="dark" className="menu">
           <Menu.Item 
             key="Home">
             <Icon type="home" />Home
           </Menu.Item>
-          <SubMenu title={
+{/*           <SubMenu title={
             <span>
               <Icon type="bars" /> Forum
             </span>
@@ -28,7 +28,7 @@ const Navigation = (props) => {
             <Menu.Item key="Forum:2">Forum 2</Menu.Item>
             <Menu.Item key="Forum:3">Forum 3</Menu.Item>
             <Menu.Item key="Forum:4">Forum 4</Menu.Item>
-          </SubMenu>
+          </SubMenu> */}
           <Menu.Item key="Login">
           <Icon type="login" />Login
           </Menu.Item>
