@@ -1,5 +1,6 @@
 import React from 'react';
-import { List, Avatar } from 'antd';
+import './forum.css';
+import { Row, Col, List, Avatar } from 'antd';
 
 const Forum = (props) => {
   const data = [
@@ -26,23 +27,28 @@ const Forum = (props) => {
   ];
 
   return (
-    <List
-      itemLayout="horizontal"
-      dataSource={data}
-      renderItem={item => (
-        <List.Item
-          actions={[`Posts: ${props.posts}`, `Last post: ${props.postDate}`]}
-        >
-          <List.Item.Meta
-            avatar={
-              <Avatar src="https://i.ytimg.com/vi/LrQHgABDdlI/hqdefault.jpg" />
-              }
-            title={item.title}
-            description={item.description}
-          />
-        </List.Item>
-      )}
-    />
+    <Row type="flex" justify="center">
+      <Col xs={12} sm={14} md={16} lg={18} xl={20}>
+        <List
+          className="forum-board-container"
+          itemLayout="horizontal"
+          dataSource={data}
+          renderItem={item => (
+            <List.Item
+              actions={[`Posts: ${props.posts}`, `Last post: ${props.postDate}`]}
+            >
+              <List.Item.Meta
+                avatar={
+                  <Avatar src="https://i.ytimg.com/vi/LrQHgABDdlI/hqdefault.jpg" />
+                  }
+                title={item.title}
+                description={item.description}
+              />
+            </List.Item>  
+          )}  
+        />
+      </Col>
+    </Row>
   );
 };
 
