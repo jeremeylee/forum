@@ -1,6 +1,9 @@
 import React from 'react';
 import './forum.css';
-import { Row, Col, List, Avatar } from 'antd';
+import {
+ Row, Col, List, Avatar 
+} from 'antd';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Forum = (props) => {
   const data = [
@@ -17,7 +20,7 @@ const Forum = (props) => {
     {
       title: 'Crying Cat Pictures',
       description: 'Big moods in here',
-      url:'/crying-cat',
+      url: '/crying-cat',
     },
     {
       title: 'Morbid Reality',
@@ -46,11 +49,17 @@ const Forum = (props) => {
                 avatar={
                   <Avatar src="https://i.ytimg.com/vi/LrQHgABDdlI/hqdefault.jpg" />
                   }
-                title={item.title}
+                title={(
+                  <Router>
+                    <Link to={item.url}>{item.title}</Link>
+
+                    <Route path={item.url} exact component='' />
+                  </Router>
+)}
                 description={item.description}
               />
-            </List.Item>  
-          )}  
+            </List.Item>
+          )}
         />
       </Col>
     </Row>
