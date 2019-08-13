@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import moment from 'moment';
-import { Layout, Affix } from 'antd';
+import { Layout, Row, Affix } from 'antd';
 import Navigation from './components/navigation';
 import HomeForumHeader from './components/homeForumHeader';
 import Forum from './components/forum';
@@ -24,9 +24,11 @@ const App = (props) => {
             postDate={moment().format('MM/DD/YYYY, h:mm a')}
           />
         </Content>
-        <Footer style= {{ textAlign: 'center' }}>
-          Forum ©2019 Created by Jeremey & Kyle
-        </Footer>
+        <Row type="flex" justify="center">
+          <Footer style= {{position: 'absolute', bottom:'0'}}>
+            Forum ©2019 Created by Jeremey & Kyle
+          </Footer>
+        </Row>
       </Layout>
     </div>
   )
