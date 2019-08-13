@@ -1,6 +1,6 @@
 import React from 'react';
 import './homeForumHeader.css';
-import { Row, Typography } from 'antd';
+import { Row, Col, Typography } from 'antd';
 import HomeForumPosts from './homeForumPosts';
 
 const HomeForumHeader = (props) => {
@@ -26,16 +26,17 @@ const HomeForumHeader = (props) => {
     data.map(item => (
       <div>
         <Row type="flex" justify="center">
-          <div className="header-container">
-            <Title level={3} style={{ color: 'white' }}>
-              {item.title}
-            </Title>
-          </div>
+              <div className="header-container">
+                <Title level={3} style={{ color: 'white' }}>
+                  {item.title}
+                </Title>
+              </div>
         </Row>
         <Row type="flex" justify="center">
-          <div className="post-container">
-            <HomeForumPosts/>
-          </div>
+    
+            <div className="post-container">
+              <HomeForumPosts/>
+            </div>
           
         </Row>
       </div>
