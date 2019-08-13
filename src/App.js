@@ -5,9 +5,10 @@ import { Layout, Row, Affix } from 'antd';
 import Navigation from './components/navigation';
 import Home from './components/home';
 import Login from './components/login';
+import Signup from './components/signup';
 
 const App = (props) => {
-  const { Header, Content, Footer } = Layout;
+  const { Header, Footer } = Layout;
 
   return (
     <div>
@@ -20,6 +21,7 @@ const App = (props) => {
           </Affix>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup} />
           <Row type="flex" justify="center">
             <Footer style= {{position: 'absolute', bottom:'0'}}>
               Forum ©2019 Created by Jeremey & Kyle
