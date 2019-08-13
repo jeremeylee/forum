@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './navigation.css';
 import { Row, Col, Menu, Icon } from 'antd';
 
@@ -16,15 +16,17 @@ const Navigation = (props) => {
       </Col>
       <Col xs={2} sm={2} md={4} lg={5} xl={5}>
         <Menu defaultSelectedKeys={['Home']} mode="horizontal" theme="dark" className="menu">
-          <Menu.Item 
+        <Menu.Item 
             key="Home">
-            <Icon type="home" />Home
+             <Link to="/"><Icon type="home" />Home</Link> 
           </Menu.Item>
           <Menu.Item key="Login">
-          <Icon type="login" />Login
+          <Link to="/login"><Icon type="login" />Login</Link> 
+          
           </Menu.Item>
           <Menu.Item key="Signup">
-          <Icon type="user-add" />Signup
+          <Link to="/signup"><Icon type="user-add" />Signup</Link> 
+          
           </Menu.Item>
         </Menu>
       </Col>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import { Layout, Row, Affix } from 'antd';
 import Home from './components/home';
@@ -9,17 +10,18 @@ const App = (props) => {
 
   return (
     <div>
-      <Layout>
-        <Affix>
-          <Header>
-            <Navigation />
-          </Header>
-        </Affix>
-        
-      </Layout>
-      
+      <Router>
+        <Layout>
+          <Affix>
+            <Header>
+              <Navigation />
+            </Header>
+          </Affix>
+          <Route exact path="/" component={Home} />
+        </Layout>
+      </Router>
     </div>
-  )
+  );
 };
 
 export default App;
