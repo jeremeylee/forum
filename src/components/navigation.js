@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './navigation.css';
 import { Row, Col, Menu, Icon } from 'antd';
 
@@ -19,16 +20,6 @@ const Navigation = (props) => {
             key="Home">
             <Icon type="home" />Home
           </Menu.Item>
-{/*           <SubMenu title={
-            <span>
-              <Icon type="bars" /> Forum
-            </span>
-          }>
-            <Menu.Item key="Forum:1">Forum 1</Menu.Item>
-            <Menu.Item key="Forum:2">Forum 2</Menu.Item>
-            <Menu.Item key="Forum:3">Forum 3</Menu.Item>
-            <Menu.Item key="Forum:4">Forum 4</Menu.Item>
-          </SubMenu> */}
           <Menu.Item key="Login">
           <Icon type="login" />Login
           </Menu.Item>
